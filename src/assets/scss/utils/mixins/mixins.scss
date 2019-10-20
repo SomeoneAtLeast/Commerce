@@ -1,0 +1,17 @@
+// Цвет и шрифт body
+
+@mixin standart-font-and-color () {
+	font-family: "pt-sans-caption-regular", sans-serif;
+	color: $main-font-color;
+	font-size: 14px;
+	line-height: 157.22%;
+}
+
+// Другие шрифты
+
+@mixin standart-font-bold () {
+	font-family: "pt-sans-caption-bold", sans-serif;
+	color: $second-font-color;
+	font-size: 15px;
+	line-height: 168.22%;
+}

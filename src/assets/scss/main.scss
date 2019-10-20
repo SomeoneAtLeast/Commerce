@@ -1,1 +1,44 @@
+@import "./utils/normalize/normalize.scss";
 @import "./utils/fonts/fonts.scss";
+@import "./utils/variables/variables.scss";
+@import "./utils/mixins/mixins.scss";
+
+body {
+	min-width: 320px;
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow: scroll;
+	@include standart-font-and-color;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+ 	-webkit-tap-highlight-color: rgba(0,0,0,0);
+  	-webkit-tap-highlight-color: transparent;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	opacity: 0;
+}
+
+@import "../../blocks/header/header.scss";
+@import "../../blocks/logo/logo.scss";
+@import "../../blocks/tel/tel.scss";
+@import "../../blocks/menu/menu.scss";
+@import "../../blocks/cart/cart.scss";
+@import "../../blocks/cart-big/cart-big.scss";
+@import "../../blocks/search/search-little/search-little.scss";
+@import "../../blocks/search/search-big/search-big.scss";
+@import "../../blocks/geolocation/geolocation.scss";
+@import "../../blocks/catalog/catalog.scss";
