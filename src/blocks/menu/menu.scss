@@ -1,6 +1,5 @@
 .menu {
 	order: 5;
-	z-index: 907;
 	position: relative;
 
 	&--header {
@@ -15,6 +14,7 @@
 	border: none;
 	position: relative;
 	cursor: pointer;
+	outline: none;
 }
 
 .menu__btn-dot {
@@ -59,7 +59,7 @@
 	z-index: 1001;
 	display: none;
 	position: absolute;
-	top: 44px;
+	top: 99%;
 	left: -22px;
 	list-style: none;
 	padding: 0;
