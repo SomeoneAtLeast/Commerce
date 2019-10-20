@@ -1,0 +1,24 @@
+.search {
+	z-index: 905;
+	position: relative;
+	order: 6;
+	width: 45px;
+	height: 44px;
+	background-image: url("../../blocks/search/img/search.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 7px;
+	transition: 0.2s;
+
+	&:active {
+		opacity: 0.3;
+		transform: scale(0.95);
+	}
+}
+
+@media (min-width: $tablet) {
+
+	.search {
+		display: none;
+	}
+}

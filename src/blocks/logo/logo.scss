@@ -1,0 +1,60 @@
+.logo {
+	z-index: 906;
+	position: relative;
+	order: 1;
+	padding-top: 6px;
+
+	&--header {
+		margin-left: 3%;
+	}
+}
+
+.logo__link {
+	display: block;
+	transition: 0.3s;
+
+	&:active {
+		opacity: 0.3;
+		transform: scale(0.95);
+	}
+}
+
+.logo__img {
+	width: 121px;
+	height: 17px;
+}
+
+.logo__main-text {
+	display: none;
+}
+
+@media (min-width: $tablet) {
+
+	.logo {
+		order: 6;
+		display: flex;
+		align-items: center;
+		width: 271px;
+		justify-content: space-between;
+
+		&--header {
+			margin-top: 16px;
+			margin-left: 0;
+			margin-right: 16px;
+		}
+	}
+
+	.logo__img {
+		width: 144px;
+		height: 24px;
+	}
+
+	.logo__main-text {
+		display: block;
+		width: 110px;
+		margin: 0;
+		font-size: 13px;
+		line-height: 17px;
+		margin-top: -3px;
+	}
+}

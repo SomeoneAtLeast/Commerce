@@ -1,0 +1,43 @@
+.tel {
+	order: 2;
+	position: relative;
+	z-index: 903;
+
+	&--footer {
+		margin-right: 22px;
+	}
+}
+
+.tel-number {
+	@include standart-font-bold;
+}
+
+@media (min-width: $tablet) {
+
+	.tel {
+		padding-left: 28px;
+		position: relative;
+
+		&--footer {
+			margin-right: 35px;
+			margin-bottom: -1px; 
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			top: 1px;
+			left: -4px;
+			background-image: url("../../blocks/tel/img/tel.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+
+	.tel-number {
+		font-size: 14px;
+		line-height: 168.22%;
+	}
+}
