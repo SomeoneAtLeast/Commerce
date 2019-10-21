@@ -6,19 +6,97 @@ div.catalog.catalog--header
 			span.catalog__line.catalog__line--3
 			span.catalog__line.catalog__line--4
 			span.catalog__line.catalog__line--5
-		h3.catalog__title Каталог товаров
+		a(href="#").catalog__btn-arrow
+			span.catalog__btn-arrow-line
+			span.catalog__btn-arrow-line
+			span.catalog__btn-arrow-line
+		h3.catalog__title.catalog__title--main-title Каталог товаров
+		h3.catalog__title.catalog__title--bags-and-backpacks Сумки и Рюкзаки
 	ul.catalog__list
 		li.catalog__list-item
-			a.catalog__list-link(href="#").catalog__list-link--sub-menu Тележки для склада
+			a.catalog__list-link(href="#").catalog__list-link--sub-menu 
+				span.catalog__main-text Тележки для склада
+				span.catalog__second-text Колеса, Колесные опоры
 		li.catalog__list-item
-			a.catalog__list-link(href="#").catalog__list-link--sub-menu  Колеса, колесные опоры
+			a.catalog__list-link(href="#").catalog__list-link--sub-menu  
+				span.catalog__main-text Колеса, Колесные опоры
+				span.catalog__second-text Складская техника
 		li.catalog__list-item
-			a.catalog__list-link(href="#") Складская техника
+			a.catalog__list-link.catalog__list-link--metal(href="#") 
+				span.catalog__main-text Складская техника
+				span.catalog__second-text Металлические поддоны
+			ul.catalog__sub-list.catalog__sub-list--metal
+				li.catalog__sub-list-item
+					a.catalog__sub-list-link(href="#") Колеса, колесные опоры
+				li.catalog__sub-list-item
+					a.catalog__sub-list-link.catalog__sub-list-link--sub-menu(href="#") Складская техника
+				li.catalog__sub-list-item
+					a.catalog__sub-list-link.catalog__sub-list-link--metal(href="#") Металлические поддоны
+					ul.catalog__super-sub-list.catalog__super-sub-list--metal
+						li.catalog__super-sub-item
+							a.catalog__suber-sub-link Колеса, Колесные опоры
+						li.catalog__super-sub-item
+							a.catalog__suber-sub-link Складская техника
+						li.catalog__super-sub-item
+							a.catalog__suber-sub-link Металлические поддоны
+						li.catalog__super-sub-item
+							a.catalog__suber-sub-link Ограждения для поддонов
+						li.catalog__super-sub-item
+							a.catalog__suber-sub-link Стеллажи и тележки для воды
+						li.catalog__super-sub-item
+							a.catalog__suber-sub-link Сетчатые контейнеры шкафы
+						li.catalog__super-sub-item
+							a.catalog__suber-sub-link Верстаки
+						li.catalog__super-sub-item
+							a.catalog__suber-sub-link Металлические стеллажи
+						li.catalog__super-sub-item
+							a.catalog__suber-sub-link Металл шкафы для документов
+				li.catalog__sub-list-item
+					a.catalog__sub-list-link.catalog__sub-list-link--sub-menu(href="#") Ограждения для поддонов
+				li.catalog__sub-list-item
+					a.catalog__sub-list-link.catalog__sub-list-link--sub-menu(href="#") Стеллажи и тележки для воды
+				li.catalog__sub-list-item
+					a.catalog__sub-list-link(href="#") Сетчатые контейнеры шкафы
+				li.catalog__sub-list-item
+					a.catalog__sub-list-link(href="#") Верстаки
 		li.catalog__list-item
-			a.catalog__list-link(href="#").catalog__list-link--sub-menu  Металлические поддоны
+			a.catalog__list-link(href="#").catalog__list-link--sub-menu  
+				span.catalog__main-text Металлические поддоны
+				span.catalog__second-text Ограждения для поддонов
 		li.catalog__list-item
-			a.catalog__list-link(href="#").catalog__list-link--sub-menu  Стеллажи и тележки для воды
+			a.catalog__list-link(href="#").catalog__list-link--sub-menu  
+				span.catalog__main-text Стеллажи и тележки для воды
+				span.catalog__second-text Стеллажи и тележки для воды
 		li.catalog__list-item
-			a.catalog__list-link(href="#").catalog__list-link--sub-menu  Сетчатые контейнеры
+			a.catalog__list-link(href="#").catalog__list-link--sub-menu  
+				span.catalog__main-text Сетчатые контейнеры
+				span.catalog__second-text Сетчатые контейнеры шкафы
 		li.catalog__list-item
-			a.catalog__list-link(href="#") Лестницы
+			a.catalog__list-link(href="#") 
+				span.catalog__main-text Лестницы
+				span.catalog__second-text Верстаки
+		li.catalog__list-item.catalog__bags-and-backpacks
+			a.catalog__list-link(href="#").catalog__list-link--sub-menu
+				span.catalog__main-text Сумки и рюкзаки
+				span.catalog__second-text Металлические стеллажи
+			ul.catalog__sub-list
+				li.catalog__sub-list-item
+					a.catalog__sub-list-link(href="#") Для ручной клади
+				li.catalog__sub-list-item
+					a.catalog__sub-list-link.catalog__sub-list-link--sub-menu(href="#") Колеса, колесные опоры
+				li.catalog__sub-list-item
+					a.catalog__sub-list-link(href="#") Тканевые рюкзаки
+				li.catalog__sub-list-item
+					a.catalog__sub-list-link.catalog__sub-list-link--sub-menu(href="#") Чемоданы размера S
+				li.catalog__sub-list-item
+					a.catalog__sub-list-link.catalog__sub-list-link--sub-menu(href="#") Чемоданы размера M
+				li.catalog__sub-list-item
+					a.catalog__sub-list-link(href="#") Категория 1
+				li.catalog__sub-list-item
+					a.catalog__sub-list-link(href="#") Категори 2
+		li.catalog__list-item.catalog__list-item--extra-item
+			a.catalog__list-link(href="#") 
+				span.catalog__second-text Металл шкафы для документов
+		li.catalog__list-item.catalog__list-item--extra-item
+			a.catalog__list-link(href="#") 
+				span.catalog__second-text Металл шкафы для одежды

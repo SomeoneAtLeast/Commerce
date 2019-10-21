@@ -1,8 +1,10 @@
 // Размеры экранов
 
-$tablet: 870px;
+$tablet: 768px;
+$bigtablet: 920px;
 $desktop: 1024px;
-$bigdesktop: 1280px;
+$bigdesktop-1: 1200px;
+$bigdesktop-2: 1280px;
 
 // Цвета текста
 
@@ -10,17 +12,28 @@ $main-font-color: #141414;
 $second-font-color: #3B3B3B;
 $third-font-color: #8E8E8E;
 $menu-font-color: #fff;
+$super-sub-menu-font-color-active: #337fd2;
+$login-reg-active-color: #337fd2;
+$cabinet-tel-link-color: #337fd2;
 
 // Фоновые цвета
 
 $menu-color: #273e4b;
 $catalog-header-color: #337FD2;
+$catalog-main-content-color: #fff;
+$catalog-main-content-color-2: #F9F9F9;
+$active-menu-item-color: #fff;
 
 // Прочие цвета
 
 $line-color: #D3D3D3;
 $dot-color: #313D50;
+$dot-color-white: #fff;
 $cart-number-color: #E65555;
 $cart-number-font: #fff;
 $menu-border-color: #79828F;
 $catalog-border-color: #DEDEDE;
+$search-big-border-color: #D6D6D6;
+$catalog-block-color: #ddd;
+$login-reg-border-color: #DADADA;
+$login-reg-input-border-color: #DADADA;

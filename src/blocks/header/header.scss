@@ -34,3 +34,26 @@
 		}		
 	}
 }
+
+@media (min-width: $desktop) {
+
+	.header__wrapper {
+		padding-top: 11px;
+	}
+
+	.main-header__line {
+		order: 5;
+
+		&--header {
+			margin-top: 12px;
+		}		
+	}
+}
+
+@media (min-width: $bigdesktop-1) {
+
+	.header__wrapper {
+		justify-content: flex-start;
+	}
+
+}

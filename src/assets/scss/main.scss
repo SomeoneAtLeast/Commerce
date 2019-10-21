@@ -5,7 +5,7 @@
 
 body {
 	min-width: 320px;
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: 0 auto;
 	overflow: scroll;
 	@include standart-font-and-color;
@@ -42,3 +42,7 @@ img {
 @import "../../blocks/search/search-big/search-big.scss";
 @import "../../blocks/geolocation/geolocation.scss";
 @import "../../blocks/catalog/catalog.scss";
+@import "../../blocks/address/address.scss";
+@import "../../blocks/chart/chart.scss";
+@import "../../blocks/cabinet/cabinet.scss";
+@import "../../blocks/login-reg/login-reg.scss";

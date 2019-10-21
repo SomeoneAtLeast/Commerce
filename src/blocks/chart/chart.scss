@@ -1,0 +1,25 @@
+.chart {
+	display: none;
+}
+
+@media (min-width: $desktop) {
+
+	.chart {
+		order: 3;
+		display: block;
+
+		&--header {
+			margin-right: 3.7%;
+		}
+	}
+
+	.chart__main-text {
+		@include standart-font-bold; 
+	}
+
+	.chart__main-text,
+	.chart__time {
+		font-size: 12px;
+		line-height: 16px;
+	}
+}

@@ -1,0 +1,56 @@
+.cabinet {
+	display: none;
+}
+
+@media (min-width: $desktop) {
+
+	.cabinet {
+		position: relative;
+		order: 4;
+		display: block;
+		padding-left: 40px;
+		width: 250px;
+		text-align: center;
+
+		&--header {
+			margin: 1% auto 0 auto;
+		}
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 40px;
+			height: 25px;
+			top: -1px;
+			left: 65px;
+			background-image: url("../../blocks/cabinet/img/cabinet.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+
+	.cabinet__link {
+		@include standart-font-bold;
+		color: $cabinet-tel-link-color;
+		font-size: 13px;
+		line-height: 168.22%;
+		border-bottom: 1px dotted $cabinet-tel-link-color;
+	}
+}
+
+@media (min-width: $bigdesktop-1) {
+
+		.cabinet {
+			width: auto;
+
+			&::before {
+				top: -1px;
+				left: -4px;
+			}
+
+			&--header {
+				margin: 0 8.5% 0 0;
+		}
+	}
+}

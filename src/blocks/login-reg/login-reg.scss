@@ -1,0 +1,114 @@
+.login-reg {
+	display: none;
+	position: absolute;
+	width: 100%;
+	top: 173px;
+
+	&--show {
+		display: block;
+	}
+}
+
+.login-reg__authorization-and-reg {
+	display: flex;
+	justify-content: space-between;
+	width: 96%;
+	margin: 0 auto;
+}
+
+.login-reg__authorization,
+.login-reg__reg {
+	text-align: center;
+	width: 50%;
+	@include standart-font-bold;
+	font-size: 18px;
+	line-height: 23px;
+	padding-bottom: 16px;
+	border-bottom: 2px solid $login-reg-border-color;
+}
+
+.login-reg__authorization {
+
+	&--active {
+		border-bottom: 2px solid $login-reg-active-color;
+		color: $login-reg-active-color;
+	}
+}
+
+.login-reg__reg {
+
+	&--active {
+		border-bottom: 2px solid $login-reg-active-color;
+		color: $login-reg-active-color;
+	}
+}
+
+.login-reg-form {
+	width: 94%;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.login-reg__label {
+	display: block;
+	margin-bottom: 32px;
+}
+
+.login-reg__label:nth-child(2) {
+	margin-bottom: 34px;
+}
+
+.login-reg__text {
+	margin-bottom: 9px;
+	display: flex;
+	align-items: center;
+}
+
+.login-reg__main-simbol {
+	color: $login-reg-active-color;
+	margin-left: 4px;
+}
+
+.login-reg__forget-your-password {
+	text-decoration: underline;
+	font-size: 13px;
+	line-height: 17px;
+	color: $third-font-color;
+	margin-left: auto;
+}
+
+.login-reg__email,
+.login-reg__password {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px 15px 18px 15px;
+	border: 1px solid $login-reg-input-border-color;
+}
+
+.login-reg__remember-me {
+	display: flex;
+	align-items: center;
+}
+
+.login-reg__checkbox {
+	display: block;
+	box-sizing: border-box;
+	width: 26px;
+	height: 26px;
+	border: 2px solid $login-reg-active-color;
+	margin-right: 6%;
+	cursor: pointer;
+}
+
+.login-reg__tick {
+	display: none;
+	background-image: url("../../blocks/login-reg/img/tick.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 25px;
+	height: 25px;
+
+	&--show {
+		display: block;
+	} 
+}

@@ -6,10 +6,9 @@
 
 	.geolocation {
 		display: flex;
-		justify-content: space-between;
 		box-sizing: border-box;
 		position: relative;
-		width: 153px;
+		width: 166px;
 		padding-left: 25px;
 		@include standart-font-and-color;
 		font-size: 13px;
@@ -20,15 +19,54 @@
 		}
 
 		&::before {
-		content: "";
-		position: absolute;
-		width: 25px;
-		height: 25px;
-		top: -3px;
-		left: -6px;
-		background-image: url("../../blocks/geolocation/img/geolocation.svg");
-		background-repeat: no-repeat;
-		background-position: center;
+			content: "";
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			top: -3px;
+			left: -6px;
+			background-image: url("../../blocks/geolocation/img/geolocation.svg");
+			background-repeat: no-repeat;
+			background-position: center;
 		}
 	}
+
+	.geolocation__what-city {
+		margin-right: 5.2%;
+	}
+}
+
+@media (min-width: $desktop) {
+
+	.geolocation {
+		font-size: 12px;
+		line-height: 16px;
+		width: 180px;
+
+		&--header {
+			margin-left: 8%;
+			margin-right: 2%;
+
+		&::before {
+			top: -3px;
+			left: -2px;
+		}
+
+		&::after {
+			content: "∨";
+			position: absolute;
+			top: -1px;
+			right: 6.5%;
+			transform: scale(2, 1);
+			font-size: 8px;
+			line-height: 17px;
+			color: $second-font-color;
+			}
+
+		}
+	}
+
+	.geolocation__what-city {
+		margin-right: 4.2%;
+	}	
 }

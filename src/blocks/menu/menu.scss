@@ -224,3 +224,68 @@
 		display: none;
 	}
 }
+
+@media (min-width: $desktop) {
+
+	.menu {
+		order: 11;
+		display: flex;
+		width: 100%;
+
+		&--header {
+			margin-left: 0;
+			margin-top: 27px;
+		}
+	}
+
+	.menu__btn {
+		order: 2;
+		flex-grow: 1;
+		height: auto;
+		background-color: $menu-color;
+	}
+
+	.menu__btn-dot {
+		background-color: $dot-color-white;
+		top: 46%;
+	}
+
+	.menu__list {
+		order: 1;
+		display: flex;
+		flex-wrap: wrap;
+		position: static;
+		width: 65.1%;
+		padding: 0;
+		padding-left: 22.8%;
+	}
+
+	.menu__list-item {
+		margin-right: 0.6%;
+		border: none;
+
+		&--login-and-reg {
+			display: none;
+		}
+
+		&--geo {
+			display: none;
+		}
+	}
+
+	.menu__list-link {
+		font-size: 13px;
+		line-height: 37px;
+		display: block;
+		padding: 6px 20px 6px 22px;
+		
+		&:focus,
+		&:hover {
+			opacity: 0.6;
+		}
+
+		&:active {
+			opacity: 0.3;
+		}
+	}
+}

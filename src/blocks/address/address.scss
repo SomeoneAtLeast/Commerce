@@ -1,0 +1,31 @@
+.address {
+	display: none;
+}
+
+@media (min-width: $desktop) {
+
+	.address {
+		order: 2;
+		display: flex;
+
+		&--header {
+			margin-right: 1.9%;
+		}
+	}
+
+	.address__text {
+		@include standart-font-bold;
+		min-width: 102px; 
+		margin-right: 1.3%;
+	}
+
+	.address__text,
+	.adress__city {
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.adress__city {
+		min-width: 202px;
+	}
+}

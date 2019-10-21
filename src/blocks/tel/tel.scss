@@ -3,13 +3,17 @@
 	position: relative;
 	z-index: 903;
 
-	&--footer {
+	&--header {
 		margin-right: 22px;
 	}
 }
 
-.tel-number {
+.tel__number {
 	@include standart-font-bold;
+}
+
+.tel__request {
+	display: none;
 }
 
 @media (min-width: $tablet) {
@@ -18,8 +22,8 @@
 		padding-left: 28px;
 		position: relative;
 
-		&--footer {
-			margin-right: 35px;
+		&--header {
+			margin-right: 49px;
 			margin-bottom: -1px; 
 		}
 
@@ -36,8 +40,56 @@
 		}
 	}
 
-	.tel-number {
+	.tel__number {
 		font-size: 14px;
 		line-height: 168.22%;
+	}
+}
+
+@media (min-width: $desktop) {
+
+	.tel {
+		order: 6;
+
+		&--header {
+			margin-top: 1.5%;
+			margin-right: 93px;
+		}
+
+		&::before {
+			top: 14px;
+			left: -6px;
+			transform: scale(1.1, 1.4);
+			background-image: url("../../blocks/tel/img/tel.svg");
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+
+	.tel__number {
+		display: block;
+		font-size: 16px;
+		line-height: 168.22%;
+		margin-bottom: 1px;
+	}
+
+	.tel__request {
+		display: block;
+		@include standart-font-bold;
+		color: $cabinet-tel-link-color;
+		font-size: 13px;
+		line-height: 168.22%;
+		border-bottom: 1px dotted $cabinet-tel-link-color;
+		width: 108px;
+		margin-right: auto;
+	}
+}
+
+@media (min-width: $bigdesktop-1) {
+		.tel {
+
+		&--header {
+			margin-right: 38px;
+		}
 	}
 }
